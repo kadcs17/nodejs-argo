@@ -13,16 +13,16 @@ const AUTO_ACCESS = process.env.AUTO_ACCESS || false; // false关闭自动保活
 const FILE_PATH = process.env.FILE_PATH || '.tmp';   // 运行目录,sub节点文件保存目录
 const SUB_PATH = process.env.SUB_PATH || 'sub';       // 订阅路径
 const PORT = process.env.SERVER_PORT || process.env.PORT || 3001;        // http服务订阅端口
-const UUID = process.env.UUID || '53f30861-8ce7-47ed-b200-ffbec6cc6a2b'; // 使用哪吒v1,在不同的平台运行需修改UUID,否则会覆盖
+const UUID = process.env.UUID || '65dd2400-31da-4c19-854a-52e207c9a161'; // 使用哪吒v1,在不同的平台运行需修改UUID,否则会覆盖
 const NEZHA_SERVER = process.env.NEZHA_SERVER || 'nezha.kadcs.eu.org:443';        // 哪吒v1填写形式: nz.abc.com:8008  哪吒v0填写形式：nz.abc.com
 const NEZHA_PORT = process.env.NEZHA_PORT || '';            // 使用哪吒v1请留空，哪吒v0需填写
 const NEZHA_KEY = process.env.NEZHA_KEY || 'sOq90vA8wAdW4fLKaE4JBTZqAmgvRcd8';              // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0的agent密钥
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'dcdeploy.1177.kdns.fr';          // 固定隧道域名,留空即启用临时隧道
-const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiZTc1ZjZlN2YwMjAwNjEwYjEzZmNiYWJiMTFmZTkzZmMiLCJ0IjoiYjE0NDk1ZjktOTc0MC00Njc3LWFmMjQtZGI0OWI1ZmQxOTc2IiwicyI6Ik9EYzJZMk5oTlRFdE1qQmhNUzAwT1dKbExUaGhNelF0WmpsbE5HUmhNakJoWmpRNSJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'render1.pe.cc.cd';          // 固定隧道域名,留空即启用临时隧道
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiZTc1ZjZlN2YwMjAwNjEwYjEzZmNiYWJiMTFmZTkzZmMiLCJ0IjoiMzI3ZDI0NzAtZjUwMS00NGRjLWI5NDUtMWQyNTVkNTVlNTFjIiwicyI6IlpUVXhZVE14TXpFdFltVmhZeTAwWXpFNUxUazVZbVF0T1daa016VTRZakkyTWpFMiJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
 const ARGO_PORT = process.env.ARGO_PORT || 8001;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
 const CFIP = process.env.CFIP || 'saas.sin.fan';            // 节点优选域名或优选ip  
 const CFPORT = process.env.CFPORT || 443;                   // 节点优选域名或优选ip对应的端口
-const NAME = process.env.NAME || 'Dcdeploy';                        // 节点名称
+const NAME = process.env.NAME || 'Render';                        // 节点名称
 
 // 创建运行文件夹
 if (!fs.existsSync(FILE_PATH)) {
