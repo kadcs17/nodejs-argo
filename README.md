@@ -7,7 +7,6 @@
 
 ---
 
-Telegram交流反馈群组：https://t.me/eooceu
 </div>
 
 ## 郑重声明
@@ -188,12 +187,6 @@ npm update -g nodejs-argo
 npm uninstall -g nodejs-argo
 npm install -g nodejs-argo
 ```
-
-## 📚 更多信息
-
-- [GitHub仓库](https://github.com/eooce/nodejs-argo)
-- [npm包页面](https://www.npmjs.com/package/nodejs-argo)
-- [问题反馈](https://github.com/eooce/nodejs-argo/issues)
 
 ---
 
